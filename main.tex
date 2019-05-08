@@ -1,0 +1,69 @@
+\documentclass[12pt,letterpaper]{article}
+
+\title{Flyer Template}
+
+\usepackage{hyperref}
+\usepackage{setspace}
+\usepackage{amsmath}%
+\usepackage{MnSymbol}%
+\usepackage{wasysym}%
+\usepackage{lmodern}
+
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[sfdefault,lf]{carlito}
+
+\usepackage[margin=1.1cm,letterpaper]{geometry}
+\usepackage{multicol}
+\usepackage{ragged2e}
+\usepackage{tabularx}
+\usepackage[table]{xcolor}
+\usepackage{graphicx}
+
+%cyan 36a8b8
+%blue b2d4ef
+%purple c677dd
+%overleaf green 4F9C45
+%green 7b9e62
+%red 1 cb4752
+%red 2 be5046
+%orange 1 d19a66
+%orange 2 e5c07b
+
+\definecolor{HighlightColor}{HTML}{36a8b8}
+\graphicspath{{img/}}
+\pagestyle{empty}
+\RaggedRight
+\parskip=12pt plus 4pt
+
+\begin{document}
+
+
+{\fontsize{40pt}{42pt}\bfseries\selectfont\color{HighlightColor}%
+Title Goes Here%
+} \hfill {\LARGE\bfseries%
+\mbox{Time and Place}%
+}
+
+\vspace{-2ex}
+
+
+\begin{large}
+\justify
+{\setstretch{0.9} \input{tex/abstract.tex}\par}
+
+\end{large}
+
+{\LARGE\bfseries Further Details \hfill $\blacksquare$ \hfill Light Refreshments Served}\par%
+
+{\centering%
+\includegraphics[width=\linewidth]{postergraphic_cropped}%
+\par}
+
+\vfill
+
+{\LARGE Contact Information}
+\hfill
+{\Large \url{https://mmore500.github.io}}
+\end{document}
